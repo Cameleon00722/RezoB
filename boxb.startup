@@ -1,0 +1,2 @@
+ip addr add 81.82.83.2/24 dev eth1
+ip route add default via 81.82.83.1
