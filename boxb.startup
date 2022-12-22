@@ -1,2 +1,9 @@
+ip addr add 10.204.217.89/28 dev eth0
 ip addr add 10.204.217.89/28 dev eth1
-ip route add default via 10.204.217.90
+ip route add default via 10.204.217.86
+ip route add 10.204.217.83/32 via 10.204.217.86 dev eth0
+ip route add 10.204.217.86/32 via 10.204.217.86 dev eth1
+ip route add 10.204.217.85/32 via 10.204.217.86 dev eth1
+ip route add 10.204.217.84/32 via 10.204.217.86 dev eth1
+/etc/init.d/bind start
+/etc/init.d/isc-dhcp-server start

@@ -1,10 +1,21 @@
 $TTL	60000
-@		IN	SOA	dnsnot.notascam.com. root.dnsnot.dnsnot.com. (
-			1 ; serial
-			28 ; refresh
-			14 ; retry
-			3600000 ; expire
-			60000 ; negative cache ttl
-			)
-@		IN	NS	dnsnot.notascam.com.
+@			IN	SOA	dnsnot.notascam.com. root.dnsnot.dnsnot.com. (
+				1 ; serial
+				28 ; refresh
+				14 ; retry
+				3600000 ; expire
+				60000 ; negative cache ttl
+				)
+@			IN	NS	dnsnot.notascam.com.
 #TODOTODO
+www 			IN 	A	
+
+	
+smtp.notascam.com	IN	MX	
+
+	
+dnsnot			IN	NS	
+
+
+mailnot 		IN 	A	
+	
